@@ -2,7 +2,7 @@
 
 //N = numero indicato dall'utente
 
-
+/* 
 let number
 
 let exponent = 3;
@@ -28,4 +28,13 @@ while (index < 100) {
 
     index++
 }
+ */
 
+
+const n = parseInt(prompt('scrivi un numero'))
+
+for (let index = 1; index <= n; index++) {
+
+    console.log(Math.pow(index, 3));
+
+}

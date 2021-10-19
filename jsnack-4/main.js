@@ -18,7 +18,7 @@ const partecipanti = ['francesco', 'sofia', 'mattia', 'giulia', 'andrea', 'alice
 
 const nomeUtente = prompt('come ti chiami?');
 
-for (let index = 0; index < partecipanti.length; index++) {
+/* for (let index = 0; index < partecipanti.length; index++) {
     const partecipante = partecipanti[index];
     console.log(partecipante);
 
@@ -28,4 +28,11 @@ for (let index = 0; index < partecipanti.length; index++) {
         document.querySelector('h1').innerHTML = 'Non puoi partecipare!'
 
     }
+} */
+
+
+if (partecipanti.includes(nomeUtente)) {
+    document.querySelector('h1').innerHTML = 'Sei stato invitato!'
+} else {
+    document.querySelector('h1').innerHTML = 'Non puoi partecipare!'
 }

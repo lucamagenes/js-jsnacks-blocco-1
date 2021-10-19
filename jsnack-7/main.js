@@ -5,7 +5,7 @@ let numero = 2
 let esponente
 
 const ul = document.querySelector('ul')
-
+/* 
 let i = 0;
 
 do {
@@ -24,4 +24,12 @@ do {
 
 
     i++
-} while (i < 1000)
+} while (i < 1000) */
+
+
+let n = 0;
+
+while (Math.pow(2, n) < 1000) {
+    console.log(Math.pow(2, n));
+    n++
+}
